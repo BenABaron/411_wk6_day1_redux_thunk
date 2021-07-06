@@ -41,10 +41,11 @@ const Import = (props) => {
                                 <TableCell>{make.MakeId}</TableCell>
                                 <TableCell>{make.MakeName}</TableCell>
                                 <TableCell>
-                                    <Button aria-controls={`${index}-simple-menu`} aria-haspopup='true' onClick={handleClick}>
-                                        <MoreVert></MoreVert>
+                                    <Button aria-controls={`${index}-simple-menu`} aria-haspopup='true' onClick={() => test(index)}>
+                                        {/* <MoreVert></MoreVert> */}
+                                        DELETE
                                     </Button>
-                                    <Menu
+                                    {/* <Menu
                                         id={`${index}-simple-menu`}
                                         anchorEl={anchorEl}
                                         keepMounted
@@ -53,7 +54,7 @@ const Import = (props) => {
                                         key={index}
                                     >
                                         <MenuItem onClick={() => test(index)}>DELETE</MenuItem>
-                                    </Menu>
+                                    </Menu> */}
                                 </TableCell>
                             </TableRow>
                         )
